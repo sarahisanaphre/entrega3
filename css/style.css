@@ -1,7 +1,3 @@
-.pad {
-  padding: 10px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -12,32 +8,15 @@ body {
   font-family: "Inter", "Roboto", sans-serif;
 }
 
-.boton-whats {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #f9b958;
-  color: black;
-  border-radius: 25px;
-  text-decoration: none;
-  border: 1px solid black;
-}
-.boton-whats:hover {
-  background-color: white;
-}
-
-.header {
+header {
   grid-area: header;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
 }
 
-.logo {
-  max-width: 300px;
-}
-
 .logo img {
-  width: 100%;
+  width: 300px;
   height: auto;
 }
 
@@ -49,7 +28,6 @@ body {
   border-radius: 25px;
   padding: 5px;
   font-weight: medium;
-  align-items: center;
 }
 
 .menu a {
@@ -61,40 +39,6 @@ body {
 .menu a:hover {
   color: #b3b3b3;
   font-weight: bolder;
-}
-
-.testimonio {
-  width: 400px;
-  height: auto;
-  align-items: center;
-  margin: 0 auto;
-  display: flex;
-  text-align: center;
-}
-
-.background {
-  width: 1920px;
-  height: 600px;
-  background: url("imagenes/background.png");
-  size: cover;
-  position: center center;
-}
-
-footer {
-  padding: 25px;
-  background: url("imagenes/background.png");
-  background-size: cover;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.info,
-.serv,
-.conta {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /*# sourceMappingURL=style.css.map */

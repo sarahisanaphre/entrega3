@@ -1,20 +1,15 @@
-.header { 
+header{
     grid-area: header;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
 }
 
-.logo {
-    max-width: 300px;
-}
-
-.logo img {
-    width: 100%;
+.logo img{
+    width: 300px;
     height: auto;
 }
-
-.menu {
+.menu{
     display: flex;
     list-style-type: none;
     justify-content: space-around;
@@ -22,16 +17,13 @@
     border-radius: 25px;
     padding: 5px;
     font-weight: medium;
-    align-items: center;
 }
-
-.menu a {
+.menu a{
     color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
-.menu a:hover {
+.menu a:hover{
     color: #b3b3b3;
     font-weight: bolder;
 }

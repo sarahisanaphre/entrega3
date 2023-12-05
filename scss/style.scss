@@ -1,6 +1,3 @@
-.pad {
-    padding: 10px; // o cualquier valor que desees
-}
 
 * {
     margin: 0;
@@ -11,8 +8,6 @@ body {
     font-family: 'Inter', 'Roboto', sans-serif;
 }
 
-@import "./base/colores";
-@import "./base/botones";
-@import "./componentes/header";
-@import "./componentes/testimonio";
-@import "./componentes/footer";
+@import "componentes/_header.scss";
+
+
