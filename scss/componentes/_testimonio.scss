@@ -1,0 +1,16 @@
+.testimonio {
+    width: 400px;
+    height: auto;
+    align-items: center;
+    margin: 0 auto; 
+    display: flex;
+    text-align: center;
+}
+
+.background {
+    width: 1920px;
+    height: 600px;
+    background: url('imagenes/background.png'); 
+    size: cover; 
+    position: center center; 
+}

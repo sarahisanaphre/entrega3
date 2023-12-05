@@ -1,3 +1,18 @@
 .pad {
     padding: 10px; // o cualquier valor que desees
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+@import "./base/colores";
+@import "./base/botones";
+@import "./componentes/header";
+@import "./componentes/testimonio";
+@import "./componentes/footer";
