@@ -1,4 +1,23 @@
-.cotizacion{
+.cotizacion-text{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.cot-text{
+    text-align: center;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
+}
+.form-container input,
+.form-container select{
+width: 100%;
+padding: 7px;
+margin: 5px 0;
+background-color: #eeeeec;
+border: 1px solid  #eeeeec;
+border-radius: 25px;
 }

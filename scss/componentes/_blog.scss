@@ -1,0 +1,26 @@
+.blog {  
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+    
+  .articulo { 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: 40px;
+}
+.articulo img{
+    width: 100%; 
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+.contenido{
+    text-align: left; 
+    width: 100%; 
+    margin: 0 auto; 
+    margin-left: 55px;
+    padding-right: 25px;
+}

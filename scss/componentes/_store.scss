@@ -1,0 +1,68 @@
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin: 35px;
+  }
+.producto{
+    text-align: left;
+    font-size: 0.8rem;
+    
+}
+  .producto img{
+    width: 100%;
+   max-width: 400px;
+    height: 100%;
+    max-height: 600px;
+    border-radius: 25px;
+    position: relative;
+    transition: transform 0.3s;
+    opacity: 1;
+    object-fit: cover;
+  }
+
+  .producto img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    filter: grayscale(15%);
+}
+
+.proyecto img:hover::after {
+    content: "Descripción del proyecto"; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+  }
+
+  .producto img:hover ::after{
+    opacity: 1;
+  }
+
+  .producto p{
+    margin: 0;
+  }
+  .button-tote{
+    background-color: orange;
+border: 0.8px solid black;
+border-radius: 25px;
+width: 170px;
+cursor: pointer;
+text-align: center;
+margin-left: 15px;
+}
+.button-playeras,
+.button-sudaderas{
+border: 0.8px solid black;
+border-radius: 25px;
+width: 170px;
+cursor: pointer;
+text-align: center;
+
+}

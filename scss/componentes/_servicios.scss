@@ -1,0 +1,36 @@
+.servicios{
+    display: grid;
+    justify-content: center;
+}
+.servicios img{
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-left: 25px;
+    margin-top: 30px;
+    align-items: center;
+}
+.servicios img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+
+.servicios img:hover::after {
+    content: "Descripción del proyecto"; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+  }
+
+  .servicios img:hover ::after{
+    opacity: 1;
+  }

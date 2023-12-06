@@ -1,0 +1,33 @@
+.pitch {
+    grid-area: pitch;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: 40px;
+}
+
+.sarahi-foto {
+    padding-top: 10px;
+    padding-left: 15px;
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.hola {
+    padding-top: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.sarahi {
+    font-size: 3rem;
+    font-weight: bold;
+}

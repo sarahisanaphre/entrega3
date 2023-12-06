@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +19,7 @@ header {
 .logo img {
   width: 300px;
   height: auto;
+  padding-left: 15px;
 }
 
 .menu {
@@ -54,7 +56,6 @@ header {
 .info-footer .servicios-footer .contacto-footer {
   display: grid;
   place-items: center;
-  padding-block-end: 25px;
 }
 
 .contacto-footer svg {
@@ -73,6 +74,374 @@ header {
 .servicios {
   font-size: 1.3rem;
   font-weight: bold;
+}
+
+.pitch {
+  grid-area: pitch;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom: 40px;
+}
+
+.sarahi-foto {
+  padding-top: 10px;
+  padding-left: 15px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-container {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hola {
+  padding-top: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sarahi {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.testimonio {
+  align-items: center;
+  background-image: url("../imagenes/background.png");
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 25px;
+  padding-bottom: 55px;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+.test {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  padding-top: 15px;
+  margin-bottom: 25px;
+}
+
+.carousel-inner {
+  width: 550px;
+  min-height: auto;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.cotizacion-text {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.cot-text {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 7px;
+  margin: 5px 0;
+  background-color: #eeeeec;
+  border: 1px solid #eeeeec;
+  border-radius: 25px;
+}
+
+.coti {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.datos {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  margin: 35px;
+  padding-bottom: 35px;
+}
+
+.proyectos img {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 600px;
+  border-radius: 25px;
+  position: relative;
+  transition: transform 0.3s;
+  opacity: 1;
+  object-fit: cover;
+}
+
+.proyectos img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.proyectos img:hover::after {
+  content: "Descripción del proyecto";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.proyectos img:hover ::after {
+  opacity: 1;
+}
+
+.linea {
+  border-top: 1px solid #000;
+  width: 100%;
+  padding-top: 25px;
+  margin-bottom: 30px;
+}
+
+.filtro-proyecto {
+  padding: 15px;
+  background-size: cover;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 55px;
+}
+
+.button-Branding {
+  background-color: orange;
+  border: 0.8px solid black;
+  border-radius: 25px;
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 15px;
+  padding-top: 11px;
+}
+
+.button-graf,
+.button-web {
+  border: 0.8px solid black;
+  border-radius: 25px;
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 11px;
+}
+
+.servicios {
+  display: grid;
+  justify-content: center;
+}
+
+.servicios img {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-left: 25px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.servicios img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.servicios img:hover::after {
+  content: "Descripción del proyecto";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.servicios img:hover ::after {
+  opacity: 1;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  margin: 35px;
+}
+
+.producto {
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.producto img {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 600px;
+  border-radius: 25px;
+  position: relative;
+  transition: transform 0.3s;
+  opacity: 1;
+  object-fit: cover;
+}
+
+.producto img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  filter: grayscale(15%);
+}
+
+.proyecto img:hover::after {
+  content: "Descripción del proyecto";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.producto img:hover ::after {
+  opacity: 1;
+}
+
+.producto p {
+  margin: 0;
+}
+
+.button-tote {
+  background-color: orange;
+  border: 0.8px solid black;
+  border-radius: 25px;
+  width: 170px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.button-playeras,
+.button-sudaderas {
+  border: 0.8px solid black;
+  border-radius: 25px;
+  width: 170px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 50px;
+}
+
+.articulo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom: 40px;
+}
+
+.articulo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 25px;
+  margin-left: 25px;
+}
+
+.contenido {
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 55px;
+  padding-right: 25px;
+}
+
+.whatsapp {
+  background-color: orange;
+  border: 0.8px solid black;
+  padding: 7px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration-line: none;
+  color: black;
+}
+
+.whatsapp:hover {
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button {
+  margin-top: 10px;
+  background-color: orange;
+  border: 0.8px solid black;
+  padding: 7px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration-line: none;
+  color: black;
+  align-items: center;
+  width: 150px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+}
+
+.button-contacto {
+  text-align: center;
+  width: auto;
+}
+
+.text-center {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
