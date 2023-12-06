@@ -55,23 +55,18 @@ header {
 
 .info-footer .servicios-footer .contacto-footer {
   display: grid;
-  place-items: center;
 }
 
 .contacto-footer svg {
-  width: 50px;
+  width: 70px;
   height: auto;
   max-width: 100%;
   max-height: 100%;
   align-items: center;
+  margin-bottom: 10px;
 }
 
-.info {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
-.servicios {
+.info, .servicio, .contact {
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -81,6 +76,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding-bottom: 40px;
+  margin-right: 25px;
 }
 
 .sarahi-foto {
@@ -353,6 +349,7 @@ header {
   cursor: pointer;
   text-align: center;
   margin-left: 15px;
+  padding-top: 7px;
 }
 
 .button-playeras,
@@ -362,6 +359,20 @@ header {
   width: 170px;
   cursor: pointer;
   text-align: center;
+  padding-top: 7px;
+}
+
+.button-playeras:hover,
+.button-sudaderas:hover {
+  background-color: orange;
+  color: black;
+  border-radius: 25px;
+}
+
+.button-tote:hover {
+  background-color: white;
+  color: black;
+  border-radius: 25px;
 }
 
 .blog {
@@ -391,6 +402,47 @@ header {
   margin: 0 auto;
   margin-left: 55px;
   padding-right: 25px;
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: rgb(173, 173, 173);
+  margin-right: 45px;
+}
+
+.blogg {
+  margin-right: 80px;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+.animacion {
+  background: url("../imagenes/des.png");
+  background-size: cover;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+}
+
+.anima {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  text-align: center;
 }
 
 .whatsapp {

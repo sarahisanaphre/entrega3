@@ -24,3 +24,45 @@
     margin-left: 55px;
     padding-right: 25px;
 }
+.title{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: rgb(173, 173, 173);
+    margin-right: 45px;
+}
+
+.blogg{
+    margin-right: 80px;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.animacion{
+    background: url('../imagenes/des.png');
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+}
+.anima{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+}
