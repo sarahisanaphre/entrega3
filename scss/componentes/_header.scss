@@ -1,75 +1,77 @@
-
-
 @media only screen and (max-width: 767px) {
-    header{
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .logo img{
-        width: 100px;
-        height: auto;
-        padding-bottom: 15px;
-    }
-    .menu{
+    header {
+        
         display: flex;
         flex-direction: column;
-        list-style-type: none;
-        justify-content: space-around;
-        background-color: #eeeeec;
-        border-radius: 25px;
-        padding: 5px;
-        font-weight: medium;
-    }
-    .menu a{
-        color: #333;
-        text-decoration: none;
-        transition: color 0.3s ease;
-        text-align: center;
-        padding: 5px;
-    }
-    .menu a:hover{
-        color: #b3b3b3;
-        font-weight: bolder;
+        align-items: center;
+        
+
+        .logo img {
+            width: 220px;
+            height: auto;
+            padding-bottom: 15px;
+        }
+
+        .menu {
+            
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: space-around;
+            background-color: #eeeeec;
+            border-radius: 25px;
+            padding: 7px;
+            font-weight: medium;
+            
+            
+
+            a {
+                color: #333;
+                text-decoration: none;
+                transition: color 0.3s ease;
+                text-align: center;
+                padding: 5px;
+
+                &:hover {
+                    color: #b3b3b3;
+                    font-weight: bolder;
+                }
+            }
+        }
     }
 }
-
-/* Estilos para dispositivos medianos */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* Estilos específicos para dispositivos medianos */
-    /* Puedes agregar estilos de acuerdo a tus necesidades */
-}
-
-/* Estilos para dispositivos grandes */
-@media only screen and (min-width: 992px) {
-    header{
+@media only screen and (min-width: 768px) {
+    header {
         grid-area: header;
         display: grid;
         grid-template-columns: 1fr 2fr;
         align-items: center;
-    }
-    
-    .logo img{
-        width: 300px;
-        height: auto;
-        padding-left: 15px;
-    }
-    .menu{
-        display: flex;
-        list-style-type: none;
-        justify-content: space-around;
-        background-color: #eeeeec;
-        border-radius: 25px;
-        padding: 5px;
-        font-weight: medium;
-    }
-    .menu a{
-        color: #333;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-    .menu a:hover{
-        color: #b3b3b3;
-        font-weight: bolder;
+
+        .logo img {
+            width: 300px;
+            height: auto;
+            padding-left: 15px;
+        }
+
+        .menu {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            background-color: #eeeeec;
+            border-radius: 25px;
+            padding: 7px;
+            font-weight: medium;
+
+            a {
+                color: #333;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #b3b3b3;
+                    font-weight: bolder;
+                }
+            }
+        }
     }
 }
