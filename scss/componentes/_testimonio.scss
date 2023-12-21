@@ -1,4 +1,32 @@
-.testimonio{
+@media only screen and (max-width: 699px) {
+    .testimonio{
+    align-items: center;
+    background-image: url('../imagenes/background.png');
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 55px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+.test{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    padding-top: 15px;
+    margin-bottom: 25px;
+}
+.carousel-inner{
+    width: 350px; 
+    min-height: auto;
+    margin: 0 auto; 
+    align-items: center;
+}
+}
+
+@media only screen and (min-width: 700px) {
+    .testimonio{
     align-items: center;
     background-image: url('../imagenes/background.png');
     background-size: cover;
@@ -21,4 +49,5 @@
     min-height: auto;
     margin: 0 auto; 
     align-items: center;
+}
 }
